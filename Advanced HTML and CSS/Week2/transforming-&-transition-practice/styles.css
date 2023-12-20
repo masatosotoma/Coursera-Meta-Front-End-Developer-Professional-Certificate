@@ -21,13 +21,14 @@
 
 /* Add rules for the element 'p' present inside the class 'letters' using descendant selector */
 
-p {
+.letters p {
   text-align: center;
   background-color: rgb(250, 150, 100);
   width: 70px;
   margin-right: 1.5px;
   border-radius: 15%;
   border-style: solid;
+  border-color: rgb(250, 125, 75);
 }
 
 /* Add rules for steps 8 and 9 */
