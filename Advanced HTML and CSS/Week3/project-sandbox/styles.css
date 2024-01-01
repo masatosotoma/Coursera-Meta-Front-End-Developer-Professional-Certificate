@@ -36,6 +36,11 @@ h2 {
   font-size: 3rem;
 }
 
+h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 header > img {
   display: block;
   margin-left: auto;
@@ -45,6 +50,7 @@ header > img {
 nav ul {
   list-style: none;
   text-align: center;
+  background-color: rgb(255, 174, 0);
 }
 
 nav li {
