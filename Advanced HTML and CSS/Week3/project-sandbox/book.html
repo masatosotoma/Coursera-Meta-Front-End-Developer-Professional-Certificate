@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hair Day</title>
+
+    <meta property="og:title" content="Our Services" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:url" content="https://hairday/" />
+    <meta
+      property="og:description"
+      content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist."
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Hair Day" />
+
+    <link rel="stylesheet" href="book.css" />
+  </head>
+  <body>
+    <header>
+      <img src="Artboard 1.png" style="width: 500px; height: 250px" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="book.html">Book</a></li>
+          <li><a href="location.html">Location</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <div>
+          <label for="email_address">Email Address</label><br />
+          <input type="email" id="email_address" name="email_address" />
+        </div>
+        <div>
+          <label for="date_booking">Date of Booking</label><br />
+          <input type="date" id="date_booking" name="date_booking" />
+        </div>
+        <div>
+          <label for="service_type">Choose A Service</label><br />
+          <fieldset id="service">
+            <input type="radio" value="cut" name="service" /> Cut & Wash
+            <input type="radio" value="color" name="service" checked /> Coloring
+            <input type="radio" value="nail" name="service" /> Nail service
+            (*based on availability)
+          </fieldset>
+          <fieldset id="gender">
+            <input type="radio" value="female" name="gender" checked /> Female
+            <input type="radio" value="male" name="gender" /> Male
+          </fieldset>
+        </div>
+        <div>
+          <label for="agreement">I agree to the cancellation policy</label>
+          <input type="checkbox" id="agreement" name="agreement" required />
+        </div>
+        <button type="submit">Book Now</button>
+      </form>
+    </main>
+    <footer><link href="index.html" />back to home</footer>
+  </body>
+</html>

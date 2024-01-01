@@ -45,6 +45,7 @@ header > img {
 nav ul {
   list-style: none;
   text-align: center;
+  background-color: rgb(255, 174, 0);
 }
 
 nav li {
@@ -80,16 +81,12 @@ main {
 footer {
   display: flex;
   background-color: blanchedalmond;
-  align-self: center;
   border-radius: 5px;
   margin: 2px;
   padding: 10px;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 10px;
 }
 
-footer div {
+footer link {
   flex: 1;
+  text-align: center;
 }
