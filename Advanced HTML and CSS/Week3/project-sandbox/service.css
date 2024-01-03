@@ -65,16 +65,18 @@ li a:hover {
   background-color: lightsteelblue;
 }
 
-section {
-  display: flex;
-}
-
-article {
-  flex: 1;
-}
-
 main {
   background-color: lightcoral;
   text-align: center;
   padding: 2em;
+}
+
+main div {
+  flex: auto;
+  background-color: rgb(230, 104, 104);
+  padding: 1em;
+}
+
+.service {
+  font-size: 25px;
 }
