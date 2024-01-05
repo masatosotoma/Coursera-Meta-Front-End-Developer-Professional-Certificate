@@ -73,10 +73,6 @@ section {
   display: flex;
 }
 
-article {
-  flex: 1;
-}
-
 p {
   flex: auto;
   font-size: 22px;
@@ -87,6 +83,35 @@ main {
   background-color: lightcoral;
   text-align: center;
   padding: 2em;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  padding: 30px;
+  width: 25%;
+  background-color: aliceblue;
+}
+
+@media not all and (min-width: 768px) {
+  .item {
+    width: 100%;
+  }
+
+  .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 275px;
 }
 
 footer {
