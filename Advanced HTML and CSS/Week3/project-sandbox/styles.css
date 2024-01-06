@@ -51,6 +51,7 @@ nav ul {
   list-style: none;
   text-align: center;
   background-color: rgb(255, 174, 0);
+  border-radius: 10px;
 }
 
 nav li {
@@ -69,16 +70,6 @@ li a:hover {
   background-color: lightsteelblue;
 }
 
-section {
-  display: flex;
-}
-
-p {
-  flex: auto;
-  font-size: 22px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
 main {
   background-color: lightcoral;
   text-align: center;
@@ -87,31 +78,35 @@ main {
 
 .wrap {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
 }
 
 .item {
-  padding: 30px;
-  width: 25%;
+  max-width: 700px;
+  max-height: 800px;
   background-color: aliceblue;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-@media not all and (min-width: 768px) {
-  .item {
-    width: 100%;
-  }
-
-  .item:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.item img {
+  max-width: 75%;
+  height: 60%;
+  display: block;
+  margin: 0 auto;
 }
 
-.img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 275px;
+.item p {
+  max-height: 75%;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 footer {
@@ -126,4 +121,29 @@ footer {
   flex-wrap: wrap;
   gap: 10px;
   text-align: center;
+}
+
+#promotion-banner {
+  text-align: center;
+  padding: 20px;
+  background-color: #247;
+  color: #fff;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 150%;
+}
+
+#promotion-banner .content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#promotion-banner h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#promotion-banner p {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
