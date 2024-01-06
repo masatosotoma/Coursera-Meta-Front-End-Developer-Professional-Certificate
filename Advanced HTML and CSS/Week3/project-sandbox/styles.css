@@ -76,6 +76,38 @@ main {
   padding: 2em;
 }
 
+#promotion-banner {
+  text-align: center;
+  padding: 20px;
+  background-color: #247;
+  color: rgb(68, 11, 226);
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 200%;
+  background-image: url("promotion-banner.png");
+}
+
+#promotion-banner .content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#promotion-banner h1 {
+  font-family: "Montserrat";
+  font-weight: 800;
+  line-height: 1em;
+  font-size: 75px;
+  color: rgb(255, 255, 255);
+}
+
+#promotion-banner p {
+  color: rgb(244, 246, 249);
+  margin-bottom: 20px;
+  line-height: 1.66em;
+  font-family: "Lato";
+  font-size: 24px;
+}
+
 .wrap {
   display: flex;
   justify-content: center;
@@ -123,27 +155,21 @@ footer {
   text-align: center;
 }
 
-#promotion-banner {
-  text-align: center;
-  padding: 20px;
-  background-color: #247;
-  color: #fff;
-  margin: 10px;
-  border-radius: 10px;
-  font-size: 150%;
+.id-container {
+  display: flex;
 }
 
-#promotion-banner .content {
-  max-width: 600px;
+.id-container img {
+  max-width: 25%;
+  height: 30%;
+  display: block;
   margin: 0 auto;
 }
 
-#promotion-banner h2 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-#promotion-banner p {
-  font-size: 16px;
-  margin-bottom: 20px;
+.id-container div {
+  font-size: 25px;
+  color: rgb(121, 72, 219);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  align-self: center;
+  text-align: left;
 }
