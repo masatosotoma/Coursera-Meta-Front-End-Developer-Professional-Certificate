@@ -19,15 +19,27 @@ function App() {
   const [role, setRole] = useState("role");
 
   const getIsFormValid = () => {
-    // Implement this function
-    return true;
+    return (
+      firstName &&
+      validateEmail(email) &&
+      password.value.length >= 8 &&
+      role !== "role"
+    );
   };
 
   const clearForm = () => {
-    // Implement this function
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setPassword({
+      value: "",
+      isTouched: false,
+    });
+    setRole("role");
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     alert("Account created!");
     clearForm();
   };
@@ -42,6 +54,7 @@ function App() {
               First name <sup>*</sup>
             </label>
             <input
+              value={firstName}
               placeholder="First name"
               onChange={(e) => setFirstName(e.target.value)}
             />
@@ -49,6 +62,7 @@ function App() {
           <div className="Field">
             <label>Last name</label>
             <input
+              value={lastName}
               placeholder="Last name"
               onChange={(e) => setLastName(e.target.value)}
             />
@@ -58,6 +72,7 @@ function App() {
               Email address <sup>*</sup>
             </label>
             <input
+              value={email}
               placeholder="Email address"
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -67,9 +82,19 @@ function App() {
               Password <sup>*</sup>
             </label>
             <input
+              value={password.value}
+              type="password"
+              onChange={(e) => {
+                setPassword({ ...password, value: e.target.value });
+              }}
+              onBlur={() => {
+                setPassword({ ...password, isTouched: true });
+              }}
               placeholder="Password"
-              onChange={(e) => setPassword(e.target.value)}
             />
+            {password.isTouched && password.value.length < 8 ? (
+              <PasswordErrorMessage />
+            ) : null}
           </div>
           <div className="Field">
             <label>
