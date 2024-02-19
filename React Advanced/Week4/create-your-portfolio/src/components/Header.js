@@ -63,7 +63,8 @@ const Header = () => {
           justifyContent="space-between"
           alignItems="center"
         >
-          <nav>{/* Add social media links based on the `socials` data */}</nav>
+          <nav src="https://github.com/masatosotoma">Github</nav>
+          <nav src="https://www.facebook.com/">facebook</nav>
           <nav>
             <HStack spacing={8}>
               {/* Add links to Projects and Contact me section */}
