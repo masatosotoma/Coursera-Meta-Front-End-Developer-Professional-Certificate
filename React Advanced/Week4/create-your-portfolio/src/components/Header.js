@@ -16,7 +16,7 @@ const socials = [
   },
   {
     icon: faGithub,
-    url: "https://github.com",
+    url: "https://github.com/masatosotoma",
   },
   {
     icon: faLinkedin,
@@ -63,8 +63,9 @@ const Header = () => {
           justifyContent="space-between"
           alignItems="center"
         >
-          <nav src="https://github.com/masatosotoma">Github</nav>
-          <nav src="https://www.facebook.com/">facebook</nav>
+          <nav href="https://github.com/masatosotoma">
+            {"Githab"}
+          </nav>
           <nav>
             <HStack spacing={8}>
               {/* Add links to Projects and Contact me section */}
