@@ -16,19 +16,11 @@ const socials = [
   },
   {
     icon: faGithub,
-    url: "https://github.com/masatosotoma",
+    url: "https://github.com",
   },
   {
     icon: faLinkedin,
     url: "https://www.linkedin.com",
-  },
-  {
-    icon: faMedium,
-    url: "https://medium.com",
-  },
-  {
-    icon: faStackOverflow,
-    url: "https://stackoverflow.com",
   },
 ];
 
@@ -63,8 +55,15 @@ const Header = () => {
           justifyContent="space-between"
           alignItems="center"
         >
-          <nav href="https://github.com/masatosotoma">
-            {"Githab"}
+          <nav>
+            {socials.map((social, index) => (
+              
+                <FontAwesomeIcon
+                  icon={social.icon}
+                  size="2x"
+                  href={social.link}
+                />
+            ))}
           </nav>
           <nav>
             <HStack spacing={8}>
