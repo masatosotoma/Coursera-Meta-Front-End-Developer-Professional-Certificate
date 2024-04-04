@@ -1,18 +1,11 @@
+import React from "react";
 import "./App.css";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <>
-      <img></img>
-      <Header>
-        <meta name="description" content="your text goes here" />
-        <meta name="og:title" content="" />
-        <meta name="og:description" content="" />
-        <meta name="og:image" content="" />
-      </Header>
-      <Nav />
-      <Main />
-      <Footer />
+      <Nav></Nav>
     </>
   );
 }
