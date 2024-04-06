@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../images/logo.png";
 
 const Nav = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <nav>
+    <nav className={`navbar ${menuOpen ? "open" : ""}`}>
       <a href="/">
         <img src={logo} alt="logo" />
       </a>
@@ -26,6 +32,15 @@ const Nav = () => {
         </li>
         <li>
           <a href="/">Menu</a>
+        </li>
+        <li>
+          <a href="/">Reservations</a>
+        </li>
+        <li>
+          <a href="/">Order Online</a>
+        </li>
+        <li>
+          <a href="/">Login</a>
         </li>
       </ul>
     </nav>
