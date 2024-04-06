@@ -1,9 +1,10 @@
 import React from "react";
+import logo from "../images/logo.png";
 
 const Nav = () => {
   return (
     <nav>
-      <a href="">
+      <a href="/">
         <img src={logo} alt="logo" />
       </a>
 
