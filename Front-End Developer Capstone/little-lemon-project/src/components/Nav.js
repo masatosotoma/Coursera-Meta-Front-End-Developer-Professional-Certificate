@@ -12,6 +12,21 @@ const Nav = () => {
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
+
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/">About</a>
+        </li>
+        <li>
+          <a href="/">Services</a>
+        </li>
+        <li>
+          <a href="/">Menu</a>
+        </li>
+      </ul>
     </nav>
   );
 };
