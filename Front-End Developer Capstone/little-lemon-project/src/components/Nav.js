@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../images/logo.png";
+import logo from "../images/logo.svg";
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,13 +14,14 @@ const Nav = () => {
         <img src={logo} alt="logo" />
       </a>
 
-      <div className="menu-icon">
+      {/*mobile navbar*/}
+      <div className="menu-icon" onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
 
-      <ul className={`nav-links`}>
+      <ul className={`nav-links ${menuOpen ? "visible" : ""}`}>
         <li>
           <a href="/">Home</a>
         </li>

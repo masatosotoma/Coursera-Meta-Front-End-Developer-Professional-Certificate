@@ -67,3 +67,11 @@ nav ul li a:hover {
 }
 
 /*header section*/
+
+.header {
+  background-color: #495e57;
+  padding: 40px 0;
+}
+
+.header section {
+}
