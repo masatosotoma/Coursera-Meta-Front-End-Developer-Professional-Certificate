@@ -1,11 +1,12 @@
 import React from "react";
+import bannerImg from "../images/restaurantfood.jpeg"
 
 const Header = () => {
   return (
     <header className="header">
       <section>
         {/*banner texts*/}
-        <div>
+        <div className="banner">
           <h2>Little Lemon</h2>
           <h3>Chicago</h3>
           <p>
@@ -16,8 +17,8 @@ const Header = () => {
         </div>
 
         {/*banner image*/}
-        <div>
-          <img src="" alt="" />
+        <div className="banner-img">
+          <img src={bannerImg} alt="" />
         </div>
       </section>
     </header>
