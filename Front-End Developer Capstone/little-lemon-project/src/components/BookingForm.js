@@ -31,6 +31,7 @@ const BookingForm = () => {
                 />
               </div>
 
+              {/*Time*/}
               <div>
                 <label htmlFor="book-time">Choose Time:</label>
                 <select
@@ -45,6 +46,17 @@ const BookingForm = () => {
                     );
                   })}
                 </select>
+              </div>
+
+              {/*# of Guets*/}
+              <div>
+                <label htmlFor="book-guests">Number of Guests:</label>
+                <input
+                  id="book-guests"
+                  min="1"
+                  value={guests}
+                  onChange={(e) => setGuest(e.target.value)}
+                />
               </div>
             </fieldset>
           </form>
