@@ -4,7 +4,7 @@ const BookingForm = () => {
   const [date, setDate] = useState("");
   const [times, setTimes] = useState("");
   const [guests, setGuest] = useState("");
-  const [occasion, setOccacion] = useState("");
+  const [occasion, setOccasion] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -57,6 +57,27 @@ const BookingForm = () => {
                   value={guests}
                   onChange={(e) => setGuest(e.target.value)}
                 />
+              </div>
+              {/*Occation field*/}
+              <div>
+                <label htmlFor="book-occasion">Occasion:</label>
+                <select
+                  id="book-occasion"
+                  key={occasion}
+                  value={occasion}
+                  onChange={(e) => setOccasion(e.target.value)}
+                >
+                  <option>Birthday</option>
+                  <option>Anniversary</option>
+                </select>
+              </div>
+              {/*submit button*/}
+              <div className="btnReceive">
+                <input
+                  aria-label="On Click"
+                  type="submit"
+                  value={"Make Your Reservation"}
+                ></input>
               </div>
             </fieldset>
           </form>
