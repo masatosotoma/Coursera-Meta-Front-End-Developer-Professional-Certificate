@@ -10,9 +10,8 @@ const Menu = () => {
       </div>
 
       <div>
-        {recipes.map((receipe) => {
-          recipe.id;
-        })}
+        {recipes.map(recipe => <div key={recipe.id}> <img src={recipe.image} alt=''/>)
+        }
       </div>
     </div>
   );
