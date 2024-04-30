@@ -1,5 +1,5 @@
 import React from "react";
-import recipes from "../recipes";
+import recipes from "../recipes.js"
 
 const Menu = () => {
   return (
@@ -9,9 +9,18 @@ const Menu = () => {
         <button>Order Menu</button>
       </div>
 
-      <div>
-        {recipes.map(recipe => <div key={recipe.id}> <img src={recipe.image} alt=''/>)
-        }
+      <div className="cards">
+        {recipes.map((recipe) => <div key={recipe.id} className='menu-items'>
+          <img src={recipe.image} alt='' />
+          <div>
+            <div>
+              <h5>{recipe.title}</h5>
+              <p>{recipe.price}</p>
+            </div>
+            <p>{recipe.description}</p>
+            <button className="orderBtn">Order Now</button>
+          </div>)
+        };
       </div>
     </div>
   );
