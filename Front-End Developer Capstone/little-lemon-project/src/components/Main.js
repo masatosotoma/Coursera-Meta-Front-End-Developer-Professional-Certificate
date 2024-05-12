@@ -31,7 +31,7 @@ const Main = () => {
     return true;
   };
 
-  const initialState = { availableTimes: fetchAPI(new Date()) };
+  const initialState = { availableTimes : fetchAPI(new Date()) };
   const [state, dispatch] = useReducer(updateTimes, initialState);
 
   function updateTimes(state, date) {
