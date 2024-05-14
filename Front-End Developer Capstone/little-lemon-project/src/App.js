@@ -4,7 +4,7 @@ import Nav from "./components/Nav";
 import Header from "./components/Header";
 import BookingForm from "./components/BookingForm";
 import Main from "./components/Main";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Main />
       <Header />
       <BookingForm />
-      <Footer />
+      <Footer/>      
     </>
   );
 }
